@@ -100,7 +100,7 @@ class LoadQuizQuestion {
                         <input type="radio" name="answer${index}" value="${ans}"/>
                         <label>${ans}</label></div>`
                     ).join('')}
-                    <p id="answer-container-${index}" style="color:green;display:none"></p>
+                    <p id="answer-container-${index}" style="display:none"></p>
                 </div>`
         });
         localStorage.setItem('questionArr', JSON.stringify(this.questions));
@@ -142,6 +142,9 @@ function calculateResult() {
         console.log(question.userAnswer)
         if(question.userAnswer === question['correct_answer']) {
             count++;
+            document.getElementById(`answer-container-${index}`).style.color ='green';
+        } else {
+            document.getElementById(`answer-container-${index}`).style.color ='red';
         }
         document.getElementById(`answer-container-${index}`).style.display ='block';
         document.getElementById(`answer-container-${index}`).innerHTML = questionArr[index].correct_answer;

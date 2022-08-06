@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #b7a5ff;
+}
+
+.conatiner {
+    margin: 0 15%;
+    width: 70%;
+    background: #fff;
+    min-height: 100%;
+    padding: 30px 30px;
+    font-family: cursive;
+    box-shadow: 0px 0px 6px #382a6e;
+    display: block;
+    height: auto;
+    float: left;
+}
+
+h2 {
+    margin: 0 0 25px;
+    color: #6145d1;
+}
+
+select {
+    height: 30px;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 275px;
+    float: left;
+}
+
+div#question-form-container {
+    float: left;
+    width: 100%;
+}

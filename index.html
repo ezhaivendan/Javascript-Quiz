@@ -3,16 +3,18 @@
     <title>Javascript Quiz</title>
 </head>
 <body>
-    <div>
-        <select name="quiz-category" id="quiz-category" onchange="userSelectedCategory()"></select>
-        <select style="display:none" name="quiz-category-levels" id="quiz-category-levels"
-            onchange="userSelectedCategorylevels()"></select>
+    <div class="conatiner">
+        <div>
+            <select name="quiz-category" id="quiz-category" onchange="userSelectedCategory()"></select>
+            <select style="display:none" name="quiz-category-levels" id="quiz-category-levels"
+                onchange="userSelectedCategorylevels()"></select>
+        </div>
+        <div style="display:none" id="question-form-container">
+            <div id="question-container"></div>
+            <button onclick="calculateResult()">Submit</button>
+        </div>
+        <div style="display:none" id="result-container"></div>
     </div>
-    <div style="display:none" id="question-form-container">
-        <div id="question-container"></div>
-        <button onclick="calculateResult()">Submit</button>
-    </div>
-    <div style="display:none" id="result-container"></div>
 </body>
 <script src="script/script.js"></script>
 </html>

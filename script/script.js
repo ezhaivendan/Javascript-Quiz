@@ -126,6 +126,7 @@ function validation(questionArr, validation = true) {
         document.getElementById(`question-${index}`).style.color = 'black';
         if( question.userAnswer === undefined) {
             validation = false;
+            alert(`Hey Buddy, I think you didn't respond to all the questions.You can identify un answered qustions in the red color. Comeon the result is waiting for you...`)
             document.getElementById(`question-${index}`).style.color = 'red';
         }
     });

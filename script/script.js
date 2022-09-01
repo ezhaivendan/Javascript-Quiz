@@ -150,7 +150,7 @@ function calculateResult() {
         document.getElementById(`answer-container-${index}`).innerHTML = questionArr[index].correct_answer;
     });
     enableContainer('result-container');
-    document.getElementById('result-container').innerHTML = `Your Result is - d${count}/${questionArr.length}`;
+    document.getElementById('result-container').innerHTML = `Your Result is - ${count}/${questionArr.length}`;
 }
 
 // Get questions ends here

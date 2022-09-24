@@ -1,7 +1,15 @@
-body {
+* {
+
+}
+
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+
+    
     background: #b7a5ff;
     font-size: 14px;
 }

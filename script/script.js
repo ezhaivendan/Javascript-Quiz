@@ -13,7 +13,6 @@ function enableAnswerContainer(className) {
         elements[i].style.display = 'block';
     };
 }
-// utils end here
 
 // Get category starts here
 class loadCategoryQuiz {
